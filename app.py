@@ -17,7 +17,7 @@ def light_off(bot,update):
    chat_id = bot.message.chat_id
    bot.message.reply_text('Turning off the Lights')
    aio.send('Light switch',0)
-
+ 
 def fan_on(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan is turned ON')
