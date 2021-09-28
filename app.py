@@ -38,7 +38,7 @@ def main(bot,update):
     fan_on(bot,update)
   elif a=="turn off the fan":
     fan_off(bot,update)
-bot_token = '2022287894:AAGj9lfHmvhtAogZYY2Lrfkg_q6E6HvykL4'
+bot_token = os.getenv('bot_token')
 u = Updater(bot_token,use_context=True)
 dp = u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
