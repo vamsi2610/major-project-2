@@ -32,16 +32,12 @@ def main(bot,update):
   a= bot.message.text
   if a =="turn on the lights":
     light_on(bot,update)
-
-  if a=='turn off the lights':
+  elif a=="turn off the lights":
     light_off(bot,update)
-
-  if a=='turn on the fan':
+  elif a=="turn on the fan":
     fan_on(bot,update)
-
-  if a=='turn off the fan':
+  elif a=="turn off the fan":
     fan_off(bot,update)
-
 bot_token = '2022287894:AAGj9lfHmvhtAogZYY2Lrfkg_q6E6HvykL4'
 u = Updater(bot_token,use_context=True)
 dp = u.dispatcher
